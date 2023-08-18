@@ -1,0 +1,122 @@
+/* App.css */
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container for the app */
+.app-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Title */
+.app-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* Wallet section */
+.wallet-info {
+  text-align: center;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.connect-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.connect-button:hover {
+  background-color: #45a049;
+}
+
+.wallet-details {
+  margin-top: 10px;
+}
+
+/* Post actions section */
+.post-actions {
+  margin-top: 30px;
+}
+
+.action-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.action-button:hover {
+  background-color: #2980b9;
+}
+
+/* Get Post section */
+.get-post {
+  margin-top: 30px;
+}
+
+.post-details {
+  margin-top: 15px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.comment-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.comment-item {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+  color: #555;
+}
+
+/* Loading animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .app-container {
+    max-width: 90%;
+  }
+}
